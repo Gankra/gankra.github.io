@@ -168,7 +168,7 @@ Ultimately, Rust lacks "proper" support for this kind of type.
 
 (Edit: a commenter pointed out to me that you can hack some stronger must-use guarantees by making step3 return a value, and having the current function return a Step3Token. This makes it so that it's impossible to return from the function without a proof of completing step3. But there's lots of holes in this design, not the least of which is that the user of your API needs to be "in on it" and set that up).
 
-(Edit2: It's possible a library to statically require its client to call functions up to and including step3 by providing `with_step1<R, F: FnOnce(Step1Token) -> (R, Step3Token)>(f: F) -> R` instead of `step1() -> Step1Token`, which fixes the first edit's approach's issue of require the client to have prior knowledge of step3. This is a similar pattern to what `scoped_threadpool` uses to work around the [JoinGuard unsoundness](https://github.com/rust-lang/rust/issues/24292))
+(Edit2: It's possible for a library to statically require its client to call functions up to and including step3 by providing `with_step1<R, F: FnOnce(Step1Token) -> (R, Step3Token)>(f: F) -> R` instead of `step1() -> Step1Token`, which fixes the first edit's approach's issue of require the client to have prior knowledge of step3. This is a similar pattern to what `scoped_threadpool` uses to work around the [JoinGuard unsoundness](https://github.com/rust-lang/rust/issues/24292))
 
 ## Must Be Used Exactly Once
 
