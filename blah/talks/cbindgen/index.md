@@ -6,7 +6,7 @@ Alexis Beingessner
 <img src="rust.png" width="250" style="display:inline; box-shadow:none;"></img>
 <img src="firefox-nightly.png" width="250" style="display:inline; box-shadow:none;"></img>
 
-slides: https://github.com/Gankro/tutorial-cbindgen/
+slides: https://github.com/Gankra/tutorial-cbindgen/
 
 
 

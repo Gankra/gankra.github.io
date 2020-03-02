@@ -4,7 +4,7 @@
 
 <span class="date">July 27th, 2019</span>
 
-Ok here's how to implement Swisstable as simply as possible, with a bunch of random notes. I'm assuming you're familiar with the basics of an open-addressing hashmap implementation, and will be skipping over all those details. If you want to brush up on those issues, you can read my primer on [the old Rust Robin Hood implementation](https://gankro.github.io/blah/robinhood-part-1/).
+Ok here's how to implement Swisstable as simply as possible, with a bunch of random notes. I'm assuming you're familiar with the basics of an open-addressing hashmap implementation, and will be skipping over all those details. If you want to brush up on those issues, you can read my primer on [the old Rust Robin Hood implementation](https://gankra.github.io/blah/robinhood-part-1/).
 
 High level concepts to keep in mind:
 

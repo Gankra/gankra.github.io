@@ -6,7 +6,7 @@ Alexis Beingessner
 [<img src="rust.png" width="250" style="display:inline; box-shadow:none;"></img>](https://rust-lang.org)
 <img src="firefox-nightly.png" width="250" style="display:inline; box-shadow:none;"></img>
 
-slides: https://github.com/Gankro/tutorial-cbindgen/
+slides: https://github.com/Gankra/tutorial-cbindgen/
 
 
 
@@ -236,7 +236,7 @@ pub enum Data { A, B, C }
 
 # Let's Look at a Simple Codebase
 
-https://github.com/Gankro/tutorial-cbindgen
+https://github.com/Gankra/tutorial-cbindgen
 
 * `rust-bindings/`
   * `cbindgen.toml`
