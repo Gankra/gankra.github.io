@@ -1,6 +1,6 @@
 % Blah Blah Blah
 
-Hey there, I'm Alexis Beingessner, but you're more likely to know me as Gankro.
+Hey there, I'm Alexis Beingessner, but you're more likely to know me as Gankra.
 
 <img src="avatar.png" width="20%"></img>
 

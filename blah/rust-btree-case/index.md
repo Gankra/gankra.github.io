@@ -161,7 +161,7 @@ impl<K: Ord, V> Node<K, V> {
     /// `Found` will be yielded with the matching index. If it fails to find an exact match,
     /// `GoDown` will be yielded with the index of the subtree the key must lie in.
     pub fn search(&self, key: &K) -> SearchResult {
-        // FIXME(Gankro): Tune when to search linear or binary based on B (and maybe K/V).
+        // FIXME(Gankra): Tune when to search linear or binary based on B (and maybe K/V).
         // For the B configured as of this writing (B = 6), binary search was *singnificantly*
         // worse for uints.
         self.search_linear(key)
@@ -657,7 +657,7 @@ impl<K: Ord, V> Node<K, V> {
     /// `GoDown` will be yielded with the index of the subtree the key must lie in.
     pub fn search<Sized? Q, NodeRef: Deref<Target=Node<K, V>>>(node: NodeRef, key: &Q)
                   -> SearchResult<NodeRef> where Q: BorrowFrom<K> + Ord {
-        // FIXME(Gankro): Tune when to search linear or binary based on B (and maybe K/V).
+        // FIXME(Gankra): Tune when to search linear or binary based on B (and maybe K/V).
         // For the B configured as of this writing (B = 6), binary search was *significantly*
         // worse for uints.
         let (found, index) = node.search_linear(key);
